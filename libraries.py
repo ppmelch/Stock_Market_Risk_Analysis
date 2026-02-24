@@ -1,20 +1,28 @@
-import os
-import re
+# ===============================
+# DATA
+# ===============================
 import numpy as np
 import pandas as pd
 import yfinance as yf
-import seaborn as sns
-import datetime as dt
-import matplotlib.pyplot as plt
-import plotly.express as px
-import streamlit as st
-import plotly.graph_objects as go
 from scipy.stats import norm
 
+# ===============================
+# VISUALIZATION
+# ===============================
+import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly.graph_objects as go
+import plotly.express as px
 
-import matplotlib.patches as mpatches
-from matplotlib.dates import relativedelta as rd 
-from matplotlib.legend_handler import HandlerPatch
+# ===============================
+# STREAMLIT
+# ===============================
+import streamlit as st
+
+
+# ===============================
+# IGNORE WARNINGS
+# ===============================
 
 import warnings
 warnings.filterwarnings('ignore')

@@ -1,16 +1,16 @@
-from libraries import pd
+import pandas as pd
 from risk_models import RiskModel
 
 
 class Altman(RiskModel):
+    """Altman Z-Score model implementation for listed companies."""
 
     def __init__(self, companies):
+        """Initialize the Altman model with a financial data provider."""
         super().__init__(companies)
 
-    # =====================================================
-    # COMPUTE FINANCIAL RATIOS
-    # =====================================================
     def _compute_ratios(self, ticker):
+        """Compute the five Altman financial ratios for one ticker."""
 
         fs = self.companies
 
@@ -22,10 +22,8 @@ class Altman(RiskModel):
 
         return X1, X2, X3, X4, X5
 
-    # =====================================================
-    # ALTMAN Z SCORE
-    # =====================================================
     def compute(self, ticker):
+        """Return the Altman Z-Score for a single ticker."""
 
         try:
             X1, X2, X3, X4, X5 = self._compute_ratios(ticker)
@@ -44,10 +42,8 @@ class Altman(RiskModel):
             print(f"⚠️ {ticker} skipped → {e}")
             return None
 
-    # =====================================================
-    # RATIOS MATRIX
-    # =====================================================
     def ratios_matrix(self):
+        """Build a dataframe with Altman ratio components by ticker."""
 
         data = []
 
@@ -69,20 +65,16 @@ class Altman(RiskModel):
 
         return pd.DataFrame(data).set_index("Ticker")
 
-    # =====================================================
-    # ALL Z SCORES
-    # =====================================================
     def compute_all(self):
+        """Compute Altman Z-Score values for all configured tickers."""
 
         return {
             ticker: self.compute(ticker)
             for ticker in self.companies.tickers
         }
 
-    # =====================================================
-    # DATAFRAME OUTPUT
-    # =====================================================
     def z_scores_df(self):
+        """Return all computed Z-Scores as a ticker-indexed dataframe."""
 
         results = self.compute_all()
 
