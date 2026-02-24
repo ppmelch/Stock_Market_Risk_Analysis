@@ -60,7 +60,7 @@ Companies below **1.8** present significant financial distress, while firms abov
 
 ---
 
-### ✅ Merton Model (Structural Credit Risk Model)
+### Merton Model (Structural Credit Risk Model)
 
 The Merton Model views a company's equity as a call option on its assets, where default occurs if asset value falls below debt obligations at maturity.
 
@@ -139,6 +139,7 @@ The Streamlit dashboard provides:
 ```bash
 streamlit run main.py
 ```
+---
 
 ## Installation
 
@@ -150,6 +151,8 @@ git clone https://github.com/ppmelch/Stock_Market_Risk_Analysis.git
 
 pip install -r requirements.txt
 
+---
+
 ### Bibliography:
 
     - Slay, R. (2023). Altman Z-Score presentation. Instituto Tecnológico y de Estudios Superiores de Occidente (ITESO).
@@ -157,3 +160,15 @@ pip install -r requirements.txt
     - Altman, E. I. (2000). Predicting financial distress of companies: Revisiting the Z-Score and ZETA® models. Stern School of Business, New York University.
     - Yahoo Finance. (n.d.). Stock market data and financial information. Retrieved February 23, 2026, from https://finance.yahoo.com/
     - OpenAI. (2026). ChatGPT [Large language model]. https://chat.openai.com/chat.
+
+---
+
+## About the Author
+
+This repository was created by **José Armando Melchor Soto**
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.  
