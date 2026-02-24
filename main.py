@@ -172,6 +172,7 @@ def main():
         - Slay, R. (2023). Altman Z-Score presentation. Instituto Tecnológico y de Estudios Superiores de Occidente (ITESO).
         - Slay, R. (2023). Merton model KMV: An introductory overview of the Merton model. Instituto Tecnológico y de Estudios Superiores de Occidente (ITESO).
         - Altman, E. I. (2000). Predicting financial distress of companies: Revisiting the Z-Score and ZETA® models. Stern School of Business, New York University.
+        - Yahoo Finance. (n.d.). Stock market data and financial information. Retrieved February 23, 2026, from https://finance.yahoo.com/
         - OpenAI. (2026). ChatGPT [Large language model]. https://chat.openai.com/chat.
         """)
 

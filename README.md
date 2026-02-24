@@ -42,11 +42,11 @@ $$
 
 Where:
 
-- $X_1$$ = Working Capital / Total Assets  
-- $X_2$$ = Retained Earnings / Total Assets  
-- $X_3$$ = EBIT / Total Assets  
-- $X_4$$ = Market Value of Equity / Total Liabilities  
-- $X_5$$ = Sales / Total Assets  
+- $X_1$ = Working Capital / Total Assets  
+- $X_2$ = Retained Earnings / Total Assets  
+- $X_3$ = EBIT / Total Assets  
+- $X_4$ = Market Value of Equity / Total Liabilities  
+- $X_5$ = Sales / Total Assets  
 
 ### Interpretation
 
@@ -56,7 +56,7 @@ Where:
 | 1.8 ≤ Z ≤ 3 | Grey Zone | Moderate risk |
 | Z > 3 | Safe | Low bankruptcy risk |
 
-Companies below **1.8** present significant financial distress, while firms above **3** are considered financially stable. :contentReference[oaicite:0]{index=0}
+Companies below **1.8** present significant financial distress, while firms above **3** are considered financially stable. 
 
 ---
 
@@ -115,7 +115,7 @@ The system downloads:
 - Market capitalization
 - Historical stock prices
 
-using **Yahoo Finance API**, allowing analysis of **any ticker symbol**.
+Using **Yahoo Finance API**, allowing analysis of **any ticker symbol**.
 
 Example:
 
@@ -145,8 +145,15 @@ streamlit run main.py
 ### Clone repository:
 
 git clone https://github.com/ppmelch/Stock_Market_Risk_Analysis.git
-cd Stock_Market_Risk_Analysis
 
 ### Install dependencies:
 
 pip install -r requirements.txt
+
+### Bibliography:
+
+    - Slay, R. (2023). Altman Z-Score presentation. Instituto Tecnológico y de Estudios Superiores de Occidente (ITESO).
+    - Slay, R. (2023). Merton model KMV: An introductory overview of the Merton model. Instituto Tecnológico y de Estudios Superiores de Occidente (ITESO).
+    - Altman, E. I. (2000). Predicting financial distress of companies: Revisiting the Z-Score and ZETA® models. Stern School of Business, New York University.
+    - Yahoo Finance. (n.d.). Stock market data and financial information. Retrieved February 23, 2026, from https://finance.yahoo.com/
+    - OpenAI. (2026). ChatGPT [Large language model]. https://chat.openai.com/chat.
